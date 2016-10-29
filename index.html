@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+  <head>
+    <script src="https://code.angularjs.org/1.4.0-beta.6/angular.js"></script>
+    <script src="https://code.angularjs.org/1.4.0-beta.6/angular-route.js"></script>
+
+    <script src="app.js"></script>
+    <script src="MainController.js"></script>
+    <script src="UserController.js"></script>
+    <script src="RepoController.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="#/main">
+        <h1>Github Viewer</h1>
+      </a>
+      
+    </header>
+    
+    <div ng-view></div>
+    
+  </body>
+
+</html>

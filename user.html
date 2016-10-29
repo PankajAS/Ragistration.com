@@ -1,0 +1,32 @@
+{{error}}
+
+<div>
+  <div>{{user.name}}</div>
+  <img ng-src="{{user.avatar_url}}" width="100px"/>
+</div>
+
+<table style="border:1px solid black">
+
+  <thead>
+    <tr>
+      <th>Repo</th>
+	  <th>Language</th>
+	  <th>Star</th>
+	  <th>Forks</th>
+	  <th>Viewer</th>
+	  <th>Url</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="repo in repos">
+      <td><a href="#/repo/{{user.login}}/{{repo.name}}">{{repo.name}}</a></td>
+      <td>{{repo.language}}</td>
+      <td>{{repo.stargazers_count}}</td>
+      <td>{{repo.forks}}</td>
+      <td>{{repo.watchers}}</td>
+      
+      <td><a href="{{repo.html_url}}">View</a></td>
+	  
+    </tr>
+  </tbody>
+</table>
