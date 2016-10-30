@@ -6,5 +6,5 @@ app.controller("MainController",function($http, $scope, $interval, $location){
     }
        
     $scope.username = "pankajas";
-    
+   
   });
